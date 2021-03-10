@@ -21,4 +21,6 @@ db = SQLAlchemy(app)
 login = LoginManager(app)
 login.login_view = 'login'
 
+logging.basicConfig(level=logging.DEBUG)
+
 import FlaskWebProject.views
