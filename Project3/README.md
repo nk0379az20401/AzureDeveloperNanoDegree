@@ -68,7 +68,7 @@ Complete a month cost analysis of each Azure resource to give an estimate total 
 | Azure App Service|   Basic (B1) |   850  INR    |
 | Azure Storage    |   Basic      |   10   INR    |
 
-Cost analysis screenshot also is there under screenshots foilder.
+Cost analysis screenshot also is there under screenshots folder.
 
 ## Architecture Explanation
 Azure Web App is the best option for deploying TECHCONF 2022 web application. It is easy to deploy with low cost. Infrastructure part is completely managed by Azure and developer can focus on the actual business problem. During peak times, TECHCONF 2022 web app can easily scale(scale out) and can handle the load. In overall architecture, PostGRESQL database is the most expensive resource.

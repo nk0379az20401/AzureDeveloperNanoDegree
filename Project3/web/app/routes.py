@@ -67,19 +67,7 @@ def notification():
             db.session.add(notification)
             db.session.commit()
 
-            ##################################################
-            ## TODO: Refactor This logic into an Azure Function
-            ## Code below will be replaced by a message queue
-            #################################################
-            
-            # TODO Call servicebus queue_client to enqueue notification ID
-            
             queue_client.send(Message(str(notification.id)))
-
-
-            #################################################
-            ## END of TODO
-            #################################################
 
             return redirect('/Notifications')
         except :
@@ -87,6 +75,3 @@ def notification():
 
     else:
         return render_template('notification.html')
-
-
-
